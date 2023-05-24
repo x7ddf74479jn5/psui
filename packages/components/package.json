@@ -10,6 +10,8 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@pandashark-ui/tw-plugin": "workspace:*",
+    "@storybook/addon-a11y": "7.0.17",
     "@storybook/addon-essentials": "^7.0.15",
     "@storybook/addon-interactions": "^7.0.15",
     "@storybook/addon-links": "^7.0.15",
@@ -32,5 +34,12 @@
     "tsconfig": "workspace:*",
     "typescript": "^5.0.4",
     "vite": "4.3.8"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "1.1.1",
+    "class-variance-authority": "0.6.0",
+    "clsx": "1.2.1",
+    "lucide-react": "0.221.0",
+    "tailwind-merge": "1.12.0"
   }
 }
