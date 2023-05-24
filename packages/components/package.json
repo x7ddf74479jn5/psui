@@ -5,20 +5,32 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint *.ts*"
+    "lint": "eslint *.ts*",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.15",
+    "@storybook/addon-interactions": "^7.0.15",
+    "@storybook/addon-links": "^7.0.15",
+    "@storybook/blocks": "^7.0.15",
+    "@storybook/react": "^7.0.15",
+    "@storybook/react-vite": "^7.0.15",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "10.4.13",
     "eslint": "^8.41.0",
+    "eslint-plugin-storybook": "0.6.12",
     "postcss": "8.4.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "storybook": "^7.0.15",
     "tailwind-config": "workspace:*",
     "tailwindcss": "3.2.7",
     "tsconfig": "workspace:*",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vite": "4.3.8"
   }
 }
