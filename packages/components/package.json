@@ -1,0 +1,24 @@
+{
+  "name": "@pandashark-ui/components",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "autoprefixer": "10.4.13",
+    "eslint": "^8.41.0",
+    "postcss": "8.4.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-config": "workspace:*",
+    "tailwindcss": "3.2.7",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.0.4"
+  }
+}
