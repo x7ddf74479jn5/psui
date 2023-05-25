@@ -34,12 +34,12 @@ const buttonVariantsConfig = {
       xs: "h-fit py-1 px-2 rounded-md",
       lg: "h-11 px-8 rounded-md",
     },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-    },
   },
-};
+  defaultVariants: {
+    variant: "default",
+    size: "default",
+  },
+} as const;
 
 const buttonVariants = cva(
   "inline-flex w-fit items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-line focus:ring-offset-2",
@@ -51,6 +51,8 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {}
 
 /**
+ * ただのボタンです。
+ *
  * Defaults Classes: "inline-flex w-fit items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-line focus:ring-offset-2"
  *
  * Variants
