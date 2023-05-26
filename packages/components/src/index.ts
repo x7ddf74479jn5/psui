@@ -5,6 +5,7 @@ export { AspectRatio } from "./AspectRatio";
 export { Avatar } from "./Avatar";
 export { Button } from "./Button";
 export { Checkbox } from "./Checkbox";
+export { Collapsible } from "./Collapsible";
 export { Input } from "./Input";
 export { Label } from "./Label";
 export { Select } from "./Select";
