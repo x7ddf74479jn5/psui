@@ -1,5 +1,6 @@
 export { cn } from "./utils";
 export { Accordion } from "./Accordion";
+export { AlertDialog } from "./AlertDialog";
 export { Button } from "./Button";
 export { Checkbox } from "./Checkbox";
 export { Input } from "./Input";
