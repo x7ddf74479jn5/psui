@@ -1,4 +1,5 @@
 export { cn } from "./utils";
+export { Accordion } from "./Accordion";
 export { Button } from "./Button";
 export { Checkbox } from "./Checkbox";
 export { Input } from "./Input";
