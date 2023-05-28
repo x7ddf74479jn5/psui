@@ -8,6 +8,7 @@ export { Collapsible } from "./Collapsible";
 export { ContextMenu } from "./ContextMenu";
 export { Copy } from "./Copy";
 export { Dialog } from "./Dialog";
+export { DropdownMenu } from "./DropdownMenu";
 export { Input } from "./Input";
 export { Label } from "./Label";
 export { Select } from "./Select";
