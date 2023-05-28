@@ -14,7 +14,14 @@ import { cn } from "../utils";
  * Indicator Default Classes: ~ "flex items-center justify-center" ~
  *
  */
-export const Checkbox = ({ className }: { className?: string }) => {
+export const Checkbox = ({
+  className,
+}: {
+  /**
+   * コンポーネントに適用するクラス名
+   */
+  className?: string;
+}) => {
   return (
     <Checkbox.Root className={className}>
       <Checkbox.Indicator className={cn("flex items-center justify-center")}>
