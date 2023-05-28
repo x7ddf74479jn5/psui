@@ -7,6 +7,7 @@ export { Button } from "./Button";
 export { Checkbox } from "./Checkbox";
 export { Collapsible } from "./Collapsible";
 export { ContextMenu } from "./ContextMenu";
+export { Copy } from "./Copy";
 export { Input } from "./Input";
 export { Label } from "./Label";
 export { Select } from "./Select";
