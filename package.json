@@ -1,5 +1,5 @@
 {
-  "name": "pandashark-ui",
+  "name": "psui",
   "version": "0.0.0",
   "private": true,
   "author": {
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^8.41.0",
-    "eslint-config-psui": "workspace:*",
+    "@psui/eslint-config-psui": "workspace:*",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",

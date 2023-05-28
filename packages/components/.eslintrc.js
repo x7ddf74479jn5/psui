@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["psui", "plugin:storybook/recommended"],
+  extends: ["plugin:storybook/recommended", "psui"],
 };

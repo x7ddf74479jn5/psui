@@ -1,5 +1,5 @@
 {
-  "name": "@pandashark-ui/components",
+  "name": "@psui/components",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -10,7 +10,8 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@pandashark-ui/tw-plugin": "workspace:*",
+    "@psui/eslint-config-psui": "workspace:*",
+    "@psui/tw-plugin": "workspace:*",
     "@storybook/addon-a11y": "7.0.17",
     "@storybook/addon-essentials": "^7.0.15",
     "@storybook/addon-interactions": "^7.0.15",
