@@ -12,6 +12,7 @@ export { DropdownMenu } from "./DropdownMenu";
 export { HoverCard } from "./HoverCard";
 export { Input } from "./Input";
 export { Label } from "./Label";
+export { Menubar } from "./Menubar";
 export { Select } from "./Select";
 export { TextArea } from "./TextArea";
 export { cn } from "./utils";
