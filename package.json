@@ -14,8 +14,13 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
+    "preview": "turbo run preview",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint:fix": "turbo run lint:fix",
+    "format:check": "turbo run format:check",
+    "format:write": "turbo run format:write",
+    "typecheck": "turbo run typecheck",
+    "check": "turbo lint typecheck format:check",
     "prepare": "husky install"
   },
   "devDependencies": {

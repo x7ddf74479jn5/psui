@@ -1,4 +1,3 @@
-export { cn } from "./utils";
 export { Accordion } from "./Accordion";
 export { AlertDialog } from "./AlertDialog";
 export { AspectRatio } from "./AspectRatio";
@@ -13,3 +12,4 @@ export { Input } from "./Input";
 export { Label } from "./Label";
 export { Select } from "./Select";
 export { TextArea } from "./TextArea";
+export { cn } from "./utils";

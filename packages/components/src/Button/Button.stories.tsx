@@ -1,8 +1,8 @@
 import { action } from "@storybook/addon-actions";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button, buttonVariantsConfig } from "./Button";
 import { getKeys } from "../utils";
+import { Button, buttonVariantsConfig } from "./Button";
 
 const meta = {
   title: "Button",

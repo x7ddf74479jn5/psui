@@ -1,8 +1,9 @@
-import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
-import { cn } from "../utils";
+import * as React from "react";
+
 import { Button } from "../Button";
+import { cn } from "../utils";
 
 /**
  * 重要な内容でユーザーを中断させ、応答を期待するモーダルダイアログです。
@@ -29,8 +30,8 @@ import { Button } from "../Button";
  *
  */
 export const Dialog = ({
-  className,
   children,
+  className,
 }: {
   /**
    * コンポーネントに適用するクラス名
@@ -56,8 +57,8 @@ Dialog.Trigger = DialogTrigger;
  * Default Classes: ~ "fixed inset-0 z-50 flex items-start justify-center sm:items-center" ~
  */
 const Portal = ({
-  className,
   children,
+  className,
   ...props
 }: DialogPrimitive.DialogPortalProps) => (
   <DialogPrimitive.Portal className={cn(className)} {...props}>
@@ -76,10 +77,10 @@ Dialog.Portal = Portal;
 const Overlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <DialogPrimitive.Overlay
     className={cn(
-      "fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-all duration-100 data-[state=closed]:animate-out data-[state=open]:fade-in data-[state=closed]:fade-out",
+      "data-[state=closed]:animate-out data-[state=open]:fade-in data-[state=closed]:fade-out fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-all duration-100",
       className
     )}
     {...props}
@@ -96,11 +97,11 @@ Dialog.Overlay = Overlay;
 const Content = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <DialogPrimitive.Content
     ref={ref}
     className={cn(
-      "fixed z-50 grid w-full gap-4 rounded-b-lg bg-overlay p-6 animate-in data-[state=open]:fade-in-90 data-[state=open]:slide-in-from-bottom-10 sm:max-w-lg sm:rounded-lg sm:zoom-in-90 data-[state=open]:sm:slide-in-from-bottom-0",
+      "animate-in data-[state=open]:fade-in-90 data-[state=open]:slide-in-from-bottom-10 sm:zoom-in-90 data-[state=open]:sm:slide-in-from-bottom-0 fixed z-50 grid w-full gap-4 rounded-b-lg bg-overlay p-6 sm:max-w-lg sm:rounded-lg",
 
       className
     )}
@@ -123,7 +124,7 @@ const Close = React.forwardRef<
   <DialogPrimitive.Close
     ref={ref}
     className={cn(
-      "absolute top-0 right-0 z-50 flex items-center justify-center w-8 h-8 rounded-full text-overlay-content hover:text-primary focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2",
+      "absolute right-0 top-0 z-50 flex h-8 w-8 items-center justify-center rounded-full text-overlay-content hover:text-primary focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2",
       className
     )}
     {...props}
@@ -148,7 +149,7 @@ const Confirm = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Close
     ref={ref}
-    className={cn("z-50 w-full flex justify-end", className)}
+    className={cn("z-50 flex w-full justify-end", className)}
     {...props}
   >
     {props.children || "Confirm"}

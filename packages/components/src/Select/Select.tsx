@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { Check, ChevronDown } from "lucide-react";
+import * as React from "react";
 
 import { cn } from "../utils";
 
@@ -46,11 +46,11 @@ Select.Value = Value;
 const Trigger = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <SelectPrimitive.Trigger
     ref={ref}
     className={cn(
-      "flex h-10 w-full items-center justify-between rounded-md border border-line bg-input py-2 px-3 text-sm text-input-content placeholder:text-input-content-2 focus:outline-none focus:ring-2 focus:ring-line focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ",
+      "flex h-10 w-full items-center justify-between rounded-md border border-line bg-input px-3 py-2 text-sm text-input-content placeholder:text-input-content-2 focus:outline-none focus:ring-2 focus:ring-line focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ",
       className
     )}
     {...props}
@@ -88,12 +88,12 @@ Select.Icon = Icon;
 const Content = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <SelectPrimitive.Portal>
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
-        "relative z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-md animate-in fade-in-80",
+        "animate-in fade-in-80 relative z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-md",
         className
       )}
       {...props}
@@ -118,7 +118,7 @@ const Label = React.forwardRef<
   <SelectPrimitive.Label
     ref={ref}
     className={cn(
-      "py-1.5 pr-2 pl-8 text-md font-semibold text-overlay-content-3",
+      "text-md py-1.5 pl-8 pr-2 font-semibold text-overlay-content-3",
       className
     )}
     {...props}
@@ -134,11 +134,11 @@ Select.Label = Label;
 const Item = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex cursor-default select-none items-center rounded-sm py-1.5 pr-2 pl-8 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       className
     )}
     {...props}

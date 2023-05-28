@@ -1,6 +1,6 @@
 "use client";
-import * as React from "react";
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
+import * as React from "react";
 
 import { cn } from "../utils";
 
@@ -43,8 +43,8 @@ AlertDialog.Trigger = Trigger;
  * Default Classes: ~ "fixed inset-0 z-50 flex items-end justify-center sm:items-center" ~
  */
 const Portal = ({
-  className,
   children,
+  className,
   ...props
 }: AlertDialogPrimitive.AlertDialogPortalProps) => (
   <AlertDialogPrimitive.Portal className={cn(className)} {...props}>
@@ -63,10 +63,10 @@ AlertDialog.Portal = Portal;
 const Overlay = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Overlay>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <AlertDialogPrimitive.Overlay
     className={cn(
-      "fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity animate-in fade-in",
+      "animate-in fade-in fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity",
       className
     )}
     {...props}
@@ -83,11 +83,11 @@ AlertDialog.Overlay = Overlay;
 const Content = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <AlertDialogPrimitive.Content
     ref={ref}
     className={cn(
-      "fixed z-50 grid w-full max-w-lg text-overlay-content scale-100 bg-overlay gap-4 p-6 opacity-100 animate-in fade-in-90 slide-in-from-bottom-10 sm:rounded-md rounded-lg sm:zoom-in-90 sm:slide-in-from-bottom-0 md:w-full",
+      "animate-in fade-in-90 slide-in-from-bottom-10 sm:zoom-in-90 sm:slide-in-from-bottom-0 fixed z-50 grid w-full max-w-lg scale-100 gap-4 rounded-lg bg-overlay p-6 text-overlay-content opacity-100 sm:rounded-md md:w-full",
 
       className
     )}
@@ -182,7 +182,7 @@ const Action = React.forwardRef<
   <AlertDialogPrimitive.Action
     ref={ref}
     className={cn(
-      "inline-flex h-10 items-center justify-center rounded-md bg-danger text-danger-content py-2 px-4 text-sm font-semibold transition-colors hover:bg-danger-focus focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+      "inline-flex h-10 items-center justify-center rounded-md bg-danger px-4 py-2 text-sm font-semibold text-danger-content transition-colors hover:bg-danger-focus focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
       className
     )}
     {...props}
@@ -202,7 +202,7 @@ const Cancel = React.forwardRef<
   <AlertDialogPrimitive.Cancel
     ref={ref}
     className={cn(
-      "inline-flex h-10 items-center justify-center rounded-md border border-slate-200 py-2 px-4 text-sm font-semibold text-overlay-content transition-colors hover:bg-overlay-3 focus:outline-none focus:ring-1 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  sm:mt-0",
+      "hover:bg-overlay-3 inline-flex h-10 items-center justify-center rounded-md border border-slate-200 px-4 py-2 text-sm font-semibold text-overlay-content transition-colors focus:outline-none focus:ring-1 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  sm:mt-0",
       className
     )}
     {...props}

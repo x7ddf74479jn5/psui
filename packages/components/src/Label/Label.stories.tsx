@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Label } from "./Label";
-import { Checkbox } from "../Checkbox";
 import { CheckIcon } from "lucide-react";
+
+import { Checkbox } from "../Checkbox";
+import { Label } from "./Label";
 
 const meta = {
   title: "Label",

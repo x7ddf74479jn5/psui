@@ -1,8 +1,8 @@
+import { Cross2Icon, RowSpacingIcon } from "@radix-ui/react-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { RowSpacingIcon, Cross2Icon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
 import { Collapsible } from "./Collapsible";
-import { useState } from "react";
 
 const meta = {
   title: "Collapsible",
@@ -29,7 +29,7 @@ export const Default: Story = {
         onOpenChange={setOpen}
       >
         <div className="flex items-center justify-between">
-          <span className="text-2xl mr-6">
+          <span className="mr-6 text-2xl">
             @x7ddf74479jn5 starred 3 repositories
           </span>
           <Collapsible.Trigger asChild>

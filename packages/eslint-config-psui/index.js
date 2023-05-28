@@ -2,13 +2,14 @@ module.exports = {
   extends: [
     "next/core-web-vitals",
     "turbo",
-    "sort-destructure-keys",
-    "simple-import-sort",
     "plugin:tailwindcss/recommended",
+    "plugin:storybook/recommended",
     "prettier",
   ],
+  plugins: ["simple-import-sort", "sort-destructure-keys"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
+    "@next/next/no-img-element": "off",
     "react/jsx-key": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",

@@ -5,7 +5,11 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint *.ts*",
+    "lint": "eslint \"src/*.{ts,tsx}\" --cache",
+    "lint:fix": "eslint --fix \"src/*.{ts,tsx}\" --cache",
+    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
+    "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
+    "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -24,7 +28,6 @@
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "10.4.13",
     "eslint": "^8.41.0",
-    "eslint-plugin-storybook": "0.6.12",
     "postcss": "8.4.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

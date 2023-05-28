@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { TextArea } from "./TextArea";
 import { Label } from "../Label";
+import { TextArea } from "./TextArea";
 
 const meta = {
   title: "TextArea",
@@ -17,7 +17,7 @@ export const Default: Story = {
     children: "Description",
   },
   render: (args) => (
-    <div className="flex flex-col gap-4 w-[400px]">
+    <div className="flex w-[400px] flex-col gap-4">
       <Label htmlFor="Description">{args.children}</Label>
       <TextArea id="Description" />
     </div>

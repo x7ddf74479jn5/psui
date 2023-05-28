@@ -1,6 +1,6 @@
-import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { Check } from "lucide-react";
+import * as React from "react";
 
 import { cn } from "../utils";
 
@@ -44,7 +44,7 @@ const Root = React.forwardRef<
   <CheckboxPrimitive.Root
     ref={ref}
     className={cn(
-      "peer h-4 w-4 shrink-0 rounded-sm border border-line focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-input",
+      "peer h-4 w-4 shrink-0 rounded-sm border border-line bg-input focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
       className
     )}
     {...props}
@@ -63,7 +63,7 @@ Checkbox.Root = Root;
 const Indicator = React.forwardRef<
   React.ElementRef<typeof CheckboxPrimitive.Indicator>,
   React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Indicator>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <CheckboxPrimitive.Indicator
     ref={ref}
     className={cn("flex items-center justify-center")}

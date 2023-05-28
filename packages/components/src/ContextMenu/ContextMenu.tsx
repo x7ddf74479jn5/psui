@@ -64,11 +64,11 @@ const SubTrigger = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.SubTrigger> & {
     inset?: boolean;
   }
->(({ className, inset, children, ...props }, ref) => (
+>(({ children, className, inset, ...props }, ref) => (
   <ContextMenuPrimitive.SubTrigger
     ref={ref}
     className={cn(
-      "flex cursor-default select-none items-center rounded-md-sm py-1.5 px-2 text-sm font-medium outline-none data-[state=open]:bg-overlay-focus focus:ring-0 focus:ring-offset-0 focus:bg-overlay-focus",
+      "rounded-md-sm flex cursor-default select-none items-center px-2 py-1.5 text-sm font-medium outline-none focus:bg-overlay-focus focus:ring-0 focus:ring-offset-0 data-[state=open]:bg-overlay-focus",
       inset && "pl-8",
       className
     )}
@@ -92,7 +92,7 @@ const SubContent = React.forwardRef<
   <ContextMenuPrimitive.SubContent
     ref={ref}
     className={cn(
-      "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay-2 shadow-theme-md animate-in slide-in-from-left-1 ",
+      "shadow-theme-md animate-in slide-in-from-left-1 z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay-2 ",
       className
     )}
     {...props}
@@ -113,7 +113,7 @@ const Content = React.forwardRef<
     <ContextMenuPrimitive.Content
       ref={ref}
       className={cn(
-        "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-theme-md animate-in fade-in-80",
+        "shadow-theme-md animate-in fade-in-80 z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content",
         className
       )}
       {...props}
@@ -136,7 +136,7 @@ const Item = React.forwardRef<
   <ContextMenuPrimitive.Item
     ref={ref}
     className={cn(
-      "relative group flex cursor-default select-none items-center rounded-md py-1.5 px-2 text-sm font-medium outline-none focus:bg-primary text-overlay-content focus:text-primary-content data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:ring-0 focus:ring-offset-0 m-1",
+      "group relative m-1 flex cursor-default select-none items-center rounded-md px-2 py-1.5 text-sm font-medium text-overlay-content outline-none focus:bg-primary focus:text-primary-content focus:ring-0 focus:ring-offset-0 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       inset && "pl-8",
       className
     )}
@@ -153,11 +153,11 @@ ContextMenu.Item = Item;
 const CheckboxItem = React.forwardRef<
   React.ElementRef<typeof ContextMenuPrimitive.CheckboxItem>,
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.CheckboxItem>
->(({ className, children, checked, ...props }, ref) => (
+>(({ checked, children, className, ...props }, ref) => (
   <ContextMenuPrimitive.CheckboxItem
     ref={ref}
     className={cn(
-      "relative group flex cursor-default select-none items-center rounded-md-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-overlay data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:ring-0 focus:ring-offset-0 focus:bg-primary focus:text-primary-content",
+      "rounded-md-sm group relative flex cursor-default select-none items-center py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content focus:ring-0 focus:ring-offset-0 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       className
     )}
     checked={checked}
@@ -182,11 +182,11 @@ ContextMenu.CheckboxItem = CheckboxItem;
 const RadioItem = React.forwardRef<
   React.ElementRef<typeof ContextMenuPrimitive.RadioItem>,
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.RadioItem>
->(({ className, children, ...props }, ref) => (
+>(({ children, className, ...props }, ref) => (
   <ContextMenuPrimitive.RadioItem
     ref={ref}
     className={cn(
-      "relative flex group cursor-default select-none items-center rounded-md-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-overlay data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:ring-0 focus:ring-offset-0 focus:bg-primary focus:text-primary-content",
+      "rounded-md-sm group relative flex cursor-default select-none items-center py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content focus:ring-0 focus:ring-offset-0 data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       className
     )}
     {...props}

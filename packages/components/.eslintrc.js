@@ -1,4 +1,7 @@
 module.exports = {
   root: true,
-  extends: ["plugin:storybook/recommended", "psui"],
+  extends: ["psui"],
+  rules: {
+    "react-hooks/rules-of-hooks": "off",
+  },
 };

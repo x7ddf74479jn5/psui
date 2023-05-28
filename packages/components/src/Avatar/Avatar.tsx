@@ -1,5 +1,5 @@
-import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
+import * as React from "react";
 
 import { cn } from "../utils";
 
@@ -15,9 +15,9 @@ import { cn } from "../utils";
  * Fallback Default Classes: ~ "flex h-full w-full items-center justify-center rounded-full bg-base-content text-base" ~
  */
 export const Avatar = ({
-  src,
   alt,
   fallback,
+  src,
 }: {
   /**
    * 画像パス
@@ -75,7 +75,7 @@ const Image = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AvatarPrimitive.Image
     ref={ref}
-    className={cn("aspect-square object-cover h-full w-full", className)}
+    className={cn("aspect-square h-full w-full object-cover", className)}
     {...props}
   />
 ));

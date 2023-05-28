@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { AlertDialog } from "./AlertDialog";
 import { Button } from "../Button";
+import { AlertDialog } from "./AlertDialog";
 
 const meta = {
   title: "AlertDialog",
@@ -29,7 +29,7 @@ export const Default: Story = {
               この操作は取り消せません。あなたのアカウントとデータをサーバーから永久に削除します。
             </p>
           </AlertDialog.Description>
-          <div className="flex flex-end gap-6 mt-2">
+          <div className="flex-end mt-2 flex gap-6">
             <AlertDialog.Cancel asChild>
               <button className="Button mauve">キャンセルする</button>
             </AlertDialog.Cancel>

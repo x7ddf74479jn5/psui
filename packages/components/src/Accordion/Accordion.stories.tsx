@@ -46,13 +46,13 @@ export const Default: Story = {
       <Accordion.Item className="AccordionItem" value="item-2">
         <Accordion.Trigger>SINGLE</Accordion.Trigger>
         <Accordion.Content>
-          <p>type="single": Accordion Itemをひとつずつ開閉します。</p>
+          <p>type=&quot;single&quot;: Accordion Itemをひとつずつ開閉します。</p>
         </Accordion.Content>
       </Accordion.Item>
       <Accordion.Item className="AccordionItem" value="item-3">
         <Accordion.Trigger>MULTIPLE</Accordion.Trigger>
         <Accordion.Content>
-          <p>type="multiple": Accordion Itemを一斉に開閉します。</p>
+          <p>type=&quot;multiple&quot;: Accordion Itemを一斉に開閉します。</p>
         </Accordion.Content>
       </Accordion.Item>
     </Accordion.Root>
