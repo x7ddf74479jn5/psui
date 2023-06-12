@@ -24,4 +24,5 @@ export { Slider } from "./Slider";
 export { Switch } from "./Switch";
 export { Tabs } from "./Tabs";
 export { TextArea } from "./TextArea";
+export { Toggle } from "./Toggle";
 export { cn } from "./utils";
