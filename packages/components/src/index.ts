@@ -16,6 +16,7 @@ export { Menubar } from "./Menubar";
 export { NavigationMenu } from "./NavigationMenu";
 export { Popover } from "./Popover";
 export { Progress } from "./Progress";
+export { RadioGroup } from "./RadioGroup";
 export { Select } from "./Select";
 export { TextArea } from "./TextArea";
 export { cn } from "./utils";
