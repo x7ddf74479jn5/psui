@@ -21,11 +21,18 @@
     "format:write": "turbo run format:write",
     "typecheck": "turbo run typecheck",
     "check": "turbo lint typecheck format:check",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prebuild": "turbo run prebuild --filter=@psui/components",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "build:release": "turbo run build --filter=playground^..."
   },
   "devDependencies": {
-    "eslint": "^8.41.0",
+    "@changesets/changelog-github": "0.4.8",
+    "@changesets/cli": "2.26.1",
     "@psui/eslint-config-psui": "workspace:*",
+    "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
