@@ -18,5 +18,6 @@ export { Popover } from "./Popover";
 export { Progress } from "./Progress";
 export { RadioGroup } from "./RadioGroup";
 export { Select } from "./Select";
+export { ScrollArea } from "./ScrollArea";
 export { TextArea } from "./TextArea";
 export { cn } from "./utils";
