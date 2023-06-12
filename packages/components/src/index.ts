@@ -15,6 +15,7 @@ export { Label } from "./Label";
 export { Menubar } from "./Menubar";
 export { NavigationMenu } from "./NavigationMenu";
 export { Popover } from "./Popover";
+export { Progress } from "./Progress";
 export { Select } from "./Select";
 export { TextArea } from "./TextArea";
 export { cn } from "./utils";
