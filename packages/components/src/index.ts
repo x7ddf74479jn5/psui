@@ -20,5 +20,6 @@ export { RadioGroup } from "./RadioGroup";
 export { ScrollArea } from "./ScrollArea";
 export { Select } from "./Select";
 export { Separator } from "./Separator";
+export { Slider } from "./Slider";
 export { TextArea } from "./TextArea";
 export { cn } from "./utils";
