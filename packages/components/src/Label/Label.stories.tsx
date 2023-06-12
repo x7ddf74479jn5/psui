@@ -24,7 +24,7 @@ export const Default: Story = {
           <CheckIcon />
         </Checkbox.Indicator>
       </Checkbox.Root>
-      <Label htmlFor="terms">{args.children}</Label>
+      <Label.Root htmlFor="terms">{args.children}</Label.Root>
     </div>
   ),
 };

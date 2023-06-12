@@ -17,7 +17,7 @@ export const Default: Story = {
   render: (args) => (
     <div className="flex items-center gap-4">
       <Input id="email" />
-      <Label htmlFor="email">{args.children}</Label>
+      <Label.Root htmlFor="email">{args.children}</Label.Root>
     </div>
   ),
 };

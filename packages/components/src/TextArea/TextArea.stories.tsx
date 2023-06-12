@@ -18,7 +18,7 @@ export const Default: Story = {
   },
   render: (args) => (
     <div className="flex w-[400px] flex-col gap-4">
-      <Label htmlFor="Description">{args.children}</Label>
+      <Label.Root htmlFor="Description">{args.children}</Label.Root>
       <TextArea id="Description" />
     </div>
   ),

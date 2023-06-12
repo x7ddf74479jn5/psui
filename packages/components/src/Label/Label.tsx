@@ -6,12 +6,34 @@ import { cn } from "../utils";
 /**
  * コントロールに関連するアクセシブルラベルをレンダリングします。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/label"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/label
  *
+ * Root Default Classes: ~ "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" ~
+ *
+ */
+export const Label = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => (
+  <Label.Root
+    className={cn(
+      "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+      className
+    )}
+  >
+    {children}
+  </Label.Root>
+);
+Label.displayName = "Label";
+
+/**
  * Default Classes: ~ "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" ~
  *
  */
-export const Label = React.forwardRef<
+const Root = React.forwardRef<
   React.ElementRef<typeof LabelPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
 >(({ className, ...props }, ref) => (
@@ -24,4 +46,5 @@ export const Label = React.forwardRef<
     {...props}
   />
 ));
-Label.displayName = "Label";
+Root.displayName = "Label.Root";
+Label.Root = Root;
