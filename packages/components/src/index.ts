@@ -21,5 +21,6 @@ export { ScrollArea } from "./ScrollArea";
 export { Select } from "./Select";
 export { Separator } from "./Separator";
 export { Slider } from "./Slider";
+export { Switch } from "./Switch";
 export { TextArea } from "./TextArea";
 export { cn } from "./utils";
