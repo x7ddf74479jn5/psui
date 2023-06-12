@@ -25,4 +25,5 @@ export { Switch } from "./Switch";
 export { Tabs } from "./Tabs";
 export { TextArea } from "./TextArea";
 export { Toggle } from "./Toggle";
+export { Tooltip } from "./Tooltip";
 export { cn } from "./utils";
