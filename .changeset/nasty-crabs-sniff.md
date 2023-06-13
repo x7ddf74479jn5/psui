@@ -3,4 +3,4 @@
 "@psui/tw-plugin": patch
 ---
 
-🧪 test deploy
+test
