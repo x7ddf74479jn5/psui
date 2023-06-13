@@ -38,7 +38,6 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@psui/eslint-config-psui": "workspace:*",
     "@psui/tw-plugin": "workspace:*",
     "@storybook/addon-a11y": "7.0.17",
     "@storybook/addon-essentials": "^7.0.15",
@@ -52,6 +51,7 @@
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "10.4.13",
     "eslint": "^8.41.0",
+    "eslint-config-psui": "workspace:*",
     "postcss": "8.4.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
