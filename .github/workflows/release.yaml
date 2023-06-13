@@ -43,7 +43,7 @@ jobs:
           commit: "📦 release: version packages"
           title: "📦 release: version packages"
           version: pnpm run version
-          publish: pnpm run publish
+          publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
