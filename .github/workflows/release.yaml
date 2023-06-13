@@ -33,9 +33,6 @@ jobs:
       - name: Install NPM Dependencies
         run: pnpm install
 
-      # - name: Check for errors
-      #   run: pnpm check
-
       - name: Build the package
         run: pnpm build:release
 
@@ -45,8 +42,8 @@ jobs:
         with:
           commit: "📦 release: version packages"
           title: "📦 release: version packages"
-          version: pnpm version
-          publish: pnpm publish
+          version: pnpm run version
+          publish: pnpm run publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
