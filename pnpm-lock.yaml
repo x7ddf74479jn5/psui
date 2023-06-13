@@ -10,12 +10,12 @@ importers:
       '@changesets/cli':
         specifier: 2.26.1
         version: 2.26.1
-      '@psui/eslint-config-psui':
-        specifier: workspace:*
-        version: link:packages/eslint-config-psui
       eslint:
         specifier: ^8.41.0
         version: 8.41.0
+      eslint-config-psui:
+        specifier: workspace:*
+        version: link:packages/eslint-config-psui
       husky:
         specifier: ^8.0.3
         version: 8.0.3
@@ -47,9 +47,6 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@psui/eslint-config-psui':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config-psui
       '@types/node':
         specifier: 20.3.0
         version: 20.3.0
@@ -65,6 +62,9 @@ importers:
       eslint:
         specifier: ^8.41.0
         version: 8.41.0
+      eslint-config-psui:
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-psui
       postcss:
         specifier: 8.4.21
         version: 8.4.21
@@ -162,9 +162,6 @@ importers:
         specifier: 1.12.0
         version: 1.12.0
     devDependencies:
-      '@psui/eslint-config-psui':
-        specifier: workspace:*
-        version: link:../eslint-config-psui
       '@psui/tw-plugin':
         specifier: workspace:*
         version: link:../tw-plugin
@@ -204,6 +201,9 @@ importers:
       eslint:
         specifier: ^8.41.0
         version: 8.41.0
+      eslint-config-psui:
+        specifier: workspace:*
+        version: link:../eslint-config-psui
       postcss:
         specifier: 8.4.21
         version: 8.4.21
