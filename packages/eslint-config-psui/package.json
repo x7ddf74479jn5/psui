@@ -1,5 +1,5 @@
 {
-  "name": "@psui/eslint-config-psui",
+  "name": "eslint-config-psui",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
