@@ -1,4 +1,4 @@
-# @x7ddf74479jn5/tw-plugin-psui
+# @psui/tw-plugin
 
 ## 0.0.1
 

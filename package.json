@@ -22,11 +22,11 @@
     "typecheck": "turbo run typecheck",
     "check": "turbo lint typecheck format:check",
     "prepare": "husky install",
-    "prebuild": "turbo run prebuild --filter=@x7ddf74479jn5/psui",
+    "prebuild": "turbo run prebuild --filter=@psui/components",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "changeset publish",
-    "build:release": "turbo run build --filter=@x7ddf74479jn5/psui"
+    "build:release": "turbo run build --filter=playground^..."
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.4.8",
