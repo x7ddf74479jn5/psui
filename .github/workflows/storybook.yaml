@@ -1,0 +1,76 @@
+name: Storybook
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/components/**"
+
+defaults:
+  run:
+    working-directory: packages/components
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup-node-and-restore-packages
+      - uses: actions/cache@v3
+        name: Setup storybook cache
+        id: storybook-cache
+        with:
+          path: ${{ env.STORYBOOK_PATH }}
+          key: storybook-${{ github.sha }}
+          restore-keys: |
+            storybook-
+        env:
+          STORYBOOK_PATH: "storybook-staic"
+      - name: Build storybook
+        run: pnpm run build-storybook
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: storybook-static
+
+  deploy:
+    timeout-minutes: 5
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+  set-status:
+    runs-on: ubuntu-latest
+    needs: deploy
+    permissions:
+      checks: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set status
+        uses: Sibz/github-status-action@v1
+        with:
+          authToken: ${{ secrets.GITHUB_TOKEN }}
+          context: "GitHub Pages"
+          description: "Deployment has completed"
+          state: "success"
+          sha: ${{ github.sha }}
+          target_url: ${{ needs.deploy.outputs.url }}
