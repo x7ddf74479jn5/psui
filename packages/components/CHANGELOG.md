@@ -1,4 +1,4 @@
-# @psui/components
+# @x7ddf74479jn5/psui
 
 ## 0.0.1
 
