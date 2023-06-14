@@ -79,6 +79,12 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
 
+  apps/test:
+    dependencies:
+      '@x7ddf74479jn5/psui':
+        specifier: workspace:*
+        version: link:../../packages/components
+
   packages/components:
     dependencies:
       '@radix-ui/react-accordion':
