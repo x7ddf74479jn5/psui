@@ -1,6 +1,6 @@
 {
   "name": "@x7ddf74479jn5/psui",
-  "version": "0.0.2",👷 ci: fix build configs)
+  "version": "0.0.2",
   "description": "An UI component library composed with Tailwind CSS and Radix-UI",
   "author": {
     "name": "x7ddf74479jn5",
