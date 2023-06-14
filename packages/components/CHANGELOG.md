@@ -1,10 +1,4 @@
-# @psui/components
-
-## 0.0.2
-
-### Patch Changes
-
-- [#6](https://github.com/x7ddf74479jn5/psui/pull/6) [`f7c38d4`](https://github.com/x7ddf74479jn5/psui/commit/f7c38d43feac6bed4b115ce6494dbc4b786b36a2) Thanks [@x7ddf74479jn5](https://github.com/x7ddf74479jn5)! - fix build and publish configs
+# @x7ddf74479jn5/psui
 
 ## 0.0.1
 
