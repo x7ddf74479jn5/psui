@@ -5,11 +5,27 @@ import React from "react";
 import { NavigationMenu } from "./NavigationMenu";
 import { cn } from "../utils";
 
+/**
+ * ウェブサイトをナビゲートするためのリンク集です。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/navigation-menu
+ *
+ * Root Default Classes: ~ "relative z-10 flex flex-1 items-center justify-center" ~
+ *
+ * List Default Classes: ~ "group flex flex-1 list-none items-center justify-center" ~
+ *
+ * Item Default Classes: ~ "group flex flex-1 items-center justify-center relative" ~
+ *
+ * Trigger Default Classes: ~ "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:bg-base-focus disabled:opacity-50  disabled:pointer-events-none bg-transparent hover:bg-base-2 data-[state=open]:bg-base-focus  h-10 py-2 px-4 group" ~
+ *
+ * Content Default Classes: ~ "data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute" ~
+ *
+ * Indicator Default Classes: ~ "top-full z-[1] flex h-1.5 items-end justify-center overflow-hidden data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=visible]:fade-in data-[state=hidden]:fade-out" ~
+ *
+ */
 const meta = {
-  title: "NavigationMenu",
+  title: "Components/NavigationMenu",
   component: NavigationMenu,
-  // @ts-ignore
-  subcomponents: { ...NavigationMenu },
   tags: ["autodocs"],
 } satisfies Meta<typeof NavigationMenu>;
 

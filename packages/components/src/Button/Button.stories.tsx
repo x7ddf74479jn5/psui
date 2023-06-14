@@ -5,7 +5,7 @@ import { getKeys } from "../utils";
 import { Button, buttonVariantsConfig } from "./Button";
 
 const meta = {
-  title: "Button",
+  title: "Components/Button",
   component: Button,
   tags: ["autodocs"],
   argTypes: {

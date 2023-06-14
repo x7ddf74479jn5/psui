@@ -8,7 +8,7 @@ import { cn } from "../utils";
 /**
  * 縦に積み重なったインタラクティブな見出しで、それぞれ関連するコンテンツのセクションが表示されます。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/accordion"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/accordion
  *
  * Item Default Classes: ~ "border-b border-b-line" ~
  *

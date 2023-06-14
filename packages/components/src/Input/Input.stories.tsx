@@ -4,7 +4,7 @@ import { Label } from "../Label";
 import { Input } from "./Input";
 
 const meta = {
-  title: "Input",
+  title: "Components/Input",
   component: Input,
   tags: ["autodocs"],
 } satisfies Meta<typeof Input>;
@@ -13,11 +13,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { children: "Email" },
-  render: (args) => (
+  render: (_args) => (
     <div className="flex items-center gap-4">
       <Input id="email" />
-      <Label.Root htmlFor="email">{args.children}</Label.Root>
+      <Label.Root htmlFor="email">Email</Label.Root>
     </div>
   ),
 };

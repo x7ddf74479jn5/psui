@@ -25,8 +25,8 @@ export const Popover = ({
   onClick,
   className,
 }: {
-  buttonContent: React.ReactNode;
-  children: React.ReactNode | React.ReactNode[];
+  buttonContent?: React.ReactNode;
+  children?: React.ReactNode | React.ReactNode[];
   onClick?: () => void;
   className?: string;
 }) => {

@@ -2,11 +2,36 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Menubar } from "./Menubar";
 
+/**
+ * デスクトップアプリケーションで一般的な視覚的に永続的なメニューで、一貫したコマンドのセットに素早くアクセスできるようにします。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/menubar
+ *
+ * Root Default Classes: ~ "flex h-10 items-center space-x-1 rounded-md border border-line bg-overlay " ~
+ *
+ * Trigger Default Classes: ~ "flex cursor-default select-none items-center rounded-[0.2rem] py-1.5 px-3 text-sm font-medium outline-none  hover:bg-primary hover:text-primary-content focus:bg-primary focus:text-primary-content data-[state=open]:bg-slate-10" ~
+ *
+ * SubTrigger Default Classes: ~ "flex cursor-default select-none items-center rounded-sm py-1.5 px-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[state=open]:bg-primary  data-[state=open]:text-primary-content" ~
+ *
+ * SubContent Default Classes: ~ "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay p-1 shadow-md animate-in slide-in-from-left-1 " ~
+ *
+ * Content Default Classes: ~ "z-50 min-w-[12rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-md animate-in slide-in-from-top-1 " ~
+ *
+ * Item Default Classes: ~ "relative cursor-default bg-overlay select-none rounded-sm py-1.5 px-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[disabled]:pointer-events-none data-[disabled]:opacity-50 m-1" ~
+ *
+ * CheckboxItem Default Classes: ~ "relative flex flex-1 cursor-default justify-between select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 " ~
+ *
+ * RadioItem Default Classes: ~ "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-base-3 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 " ~
+ *
+ * Label Default Classes: ~ "px-2 py-1.5 text-sm font-semibold text-overlay-content " ~
+ *
+ * Separator Default Classes: ~ "-mx-1 my-1 h-px bg-base-2 " ~
+ *
+ * Shortcut Default Classes: ~ "ml-auto text-xs tracking-widest text-base-content-2" ~
+ */
 const meta = {
-  title: "Menubar",
+  title: "Components/Menubar",
   component: Menubar,
-  // @ts-ignore
-  subcomponents: { ...Menubar },
   tags: ["autodocs"],
 } satisfies Meta<typeof Menubar>;
 

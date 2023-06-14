@@ -8,7 +8,7 @@ import { cn } from "../utils";
 /**
  * 重要な内容でユーザーを中断させ、応答を期待するモーダルダイアログです。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/dialog"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/dialog
  *
  * Portal Default Classes: ~ "fixed inset-0 z-50 flex items-start justify-center sm:items-center" ~
  *
@@ -40,7 +40,7 @@ export const Dialog = ({
   /**
    * ダイアログコンポーネントのパーツ
    */
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) => {
   return <></>;
 };

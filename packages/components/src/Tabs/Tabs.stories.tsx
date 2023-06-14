@@ -6,7 +6,7 @@ import { Button } from "../Button";
 import { Input } from "../Input";
 
 const meta = {
-  title: "Tabs",
+  title: "Components/Tabs",
   component: Tabs,
   tags: ["autodocs"],
 } satisfies Meta<typeof Tabs>;

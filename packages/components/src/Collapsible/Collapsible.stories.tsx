@@ -4,8 +4,14 @@ import { useState } from "react";
 
 import { Collapsible } from "./Collapsible";
 
+/**
+ * パネルの拡大・縮小を行うインタラクティブなコンポーネントです。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/collapsible
+ *
+ */
 const meta = {
-  title: "Collapsible",
+  title: "Components/Collapsible",
   component: Collapsible,
   tags: ["autodocs"],
 } satisfies Meta<typeof Collapsible>;
@@ -13,12 +19,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-/**
- * パネルの拡大・縮小を行うインタラクティブなコンポーネントです。
- *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/collapsible"}
- *
- */
 export const Default: Story = {
   render: () => {
     const [open, setOpen] = useState(false);

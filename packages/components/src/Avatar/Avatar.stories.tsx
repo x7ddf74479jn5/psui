@@ -2,8 +2,19 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Avatar } from "./Avatar";
 
+/**
+ * ユーザーを表現するためのフォールバックを持つ画像要素です。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/avatar
+ *
+ * Root Default Classes: ~ "relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full" ~
+ *
+ * Image Default Classes: ~ "aspect-square object-cover h-full w-full" ~
+ *
+ * Fallback Default Classes: ~ "flex h-full w-full items-center justify-center rounded-full bg-base-content text-base" ~
+ */
 const meta = {
-  title: "Avatar",
+  title: "Components/Avatar",
   component: Avatar,
   tags: ["autodocs"],
 } satisfies Meta<typeof Avatar>;
@@ -27,6 +38,9 @@ export const Default: Story = {
   ),
 };
 
+/**
+ * src属性が正しく提供されない場合、フォールバックテキストを表示します。
+ */
 export const Fallback: Story = {
   args: { src: "", alt: "", fallback: "CT" },
   render: (args) => (

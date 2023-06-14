@@ -9,7 +9,7 @@ import { cn } from "../utils";
 /**
  * ユーザーが選択できるオプションのリストを表示し、ボタンでトリガーします。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/select"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/select
  *
  * Trigger Default Classes: ~ "flex h-10 w-full items-center justify-between rounded-md border border-line bg-input py-2 px-3 text-sm text-input-content placeholder:text-input-content-2 focus:outline-none focus:ring-2 focus:ring-line focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 " ~
  *

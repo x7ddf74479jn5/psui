@@ -3,8 +3,31 @@ import { useState } from "react";
 
 import { ContextMenu } from "./ContextMenu";
 
+/**
+ * 右クリックや長押しをトリガーに、ポインターの位置にあるメニューを表示します。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/context-menu
+ *
+ * SubTrigger Default Classes: ~ "flex cursor-default select-none items-center rounded-md-sm py-1.5 px-2 text-sm font-medium outline-none focus:bg-overlay data-[state=open]:bg-overlay-focus focus:ring-0 focus:ring-offset-0 focus:bg-overlay-focus" ~
+ *
+ * SubContent Default Classes: ~ "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay-2 shadow-theme-md animate-in slide-in-from-left-1 " ~
+ *
+ * Content Default Classes: ~ "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-theme-md animate-in fade-in-80" ~
+ *
+ * Separator Default Classes: ~ "ml-auto text-xs tracking-widest text-overlay-content-2 text-opacity-70 group-focus:text-primary-content" ~
+ *
+ * Label Default Classes: ~ "px-2 py-1.5 text-sm font-semibold text-overlay-content " ~
+ *
+ * Shortcut Default Classes: ~ "ml-auto text-xs tracking-widest text-overlay-content-2 text-opacity-70 group-focus:text-primary-content" ~
+ *
+ * Item Default Classes: ~ "relative group flex cursor-default select-none items-center rounded-md py-1.5 px-2 text-sm font-medium outline-none focus:bg-primary text-overlay-content focus:text-primary-content data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:ring-0 focus:ring-offset-0 m-1" ~
+ *
+ * RadioItem Default Classes: ~ "relative flex group cursor-default select-none items-center rounded-md-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-overlay data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:ring-0 focus:ring-offset-0 focus:bg-primary focus:text-primary-content" ~
+ *
+ * CheckboxItem Default Classes: ~ "relative group flex cursor-default select-none items-center rounded-md-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-overlay data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus:ring-0 focus:ring-offset-0 focus:bg-primary focus:text-primary-content" ~
+ */
 const meta = {
-  title: "ContextMenu",
+  title: "Components/ContextMenu",
   component: ContextMenu,
   tags: ["autodocs"],
 } satisfies Meta<typeof ContextMenu>;

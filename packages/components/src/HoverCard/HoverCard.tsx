@@ -6,7 +6,7 @@ import { cn } from "../utils";
 /**
  * リンクの後ろにあるコンテンツをプレビューするためのものです。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/hover-card"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/hover-card
  *
  * HoverCardContent Default Classes: ~ "z-50 w-64 rounded-md border border-line bg-white p-4 shadow-theme-md outline-none animate-in zoom-in-90  " ~
  */

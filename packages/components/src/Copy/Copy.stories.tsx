@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Copy } from "./Copy";
 
 const meta = {
-  title: "Copy",
+  title: "Components/Copy",
   component: Copy,
   tags: ["autodocs"],
 } satisfies Meta<typeof Copy>;

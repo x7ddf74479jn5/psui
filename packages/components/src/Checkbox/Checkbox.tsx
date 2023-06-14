@@ -7,7 +7,7 @@ import { cn } from "../utils";
 /**
  * チェック済みと未チェックの切り替えができるコントロールです。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/checkbox"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/checkbox
  *
  * Root Default Classes: ~ "peer h-4 w-4 shrink-0 rounded-sm border border-line focus:outline-none focus:ring-2 focus:ring-line-focus focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-input" ~
  *

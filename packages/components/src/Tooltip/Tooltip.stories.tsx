@@ -4,7 +4,7 @@ import { Tooltip } from "./Tooltip";
 import { PlusIcon } from "lucide-react";
 
 const meta = {
-  title: "Tooltip",
+  title: "Components/Tooltip",
   component: Tooltip,
   tags: ["autodocs"],
 } satisfies Meta<typeof Tooltip>;

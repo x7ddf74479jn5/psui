@@ -19,11 +19,32 @@ import {
 import { DropdownMenu } from "./DropdownMenu";
 import { Button } from "../Button";
 
+/**
+ * ボタンをきっかけに、ユーザーに対してメニュー（アクションや機能のセットなど）を表示する。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/dropdown-menu
+ *
+ * SubTrigger Default Classes: ~ "flex cursor-default select-none items-center rounded-md-sm py-1.5 px-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[state=open]:bg-overlay-focus" ~
+ *
+ * SubComponent Default Classes: ~ "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-md animate-in slide-in-from-left-1 " ~
+ *
+ * Content Default Classes: ~ "z-50 min-w-[8rem] overflow-hidden rounded-md border border-line bg-overlay text-overlay-content shadow-md animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=top]:slide-in-from-bottom-2 " ~
+ *
+ * Item Default Classes: ~ "relative flex cursor-default select-none items-center rounded-md-sm py-1.5 px-2 bg-overlay text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[disabled]:pointer-events-none data-[disabled]:opacity-50 group" ~
+ *
+ * CheckboxItem Default Classes: ~ "relative flex cursor-default select-none items-center rounded-md-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-primary data-[disabled]:pointer-events-none data-[disabled]:opacity-50 " ~
+ *
+ * RadioItem Default Classes: ~ "relative flex cursor-default select-none items-center rounded-md-sm py-1.5 pl-8 pr-2 text-sm font-medium outline-none focus:bg-primary data-[disabled]:pointer-events-none data-[disabled]:opacity-50 " ~
+ *
+ * Label Default Classes: ~ "px-2 py-1.5 text-sm font-semibold text-overlay-content" ~
+ *
+ * Separator Default Classes: ~ "-mx-1 my-1 h-px bg-line" ~
+ *
+ * Shortcut Default Classes: ~ "ml-auto text-xs tracking-widest text-overlay-content-3 group-hover:text-primary-content" ~
+ */
 const meta = {
-  title: "DropdownMenu",
+  title: "Components/DropdownMenu",
   component: DropdownMenu,
-  // @ts-ignore
-  subcomponents: { ...DropdownMenu },
   tags: ["autodocs"],
 } satisfies Meta<typeof DropdownMenu>;
 

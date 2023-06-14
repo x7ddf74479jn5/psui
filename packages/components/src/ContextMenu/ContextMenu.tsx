@@ -7,7 +7,7 @@ import { cn } from "../utils";
 /**
  * 右クリックや長押しをトリガーに、ポインターの位置にあるメニューを表示します。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/context-menu"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/context-menu
  *
  * SubTrigger Default Classes: ~ "flex cursor-default select-none items-center rounded-md-sm py-1.5 px-2 text-sm font-medium outline-none focus:bg-overlay data-[state=open]:bg-overlay-focus focus:ring-0 focus:ring-offset-0 focus:bg-overlay-focus" ~
  *
