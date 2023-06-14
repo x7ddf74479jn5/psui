@@ -1,13 +1,34 @@
 {
-  "name": "@psui/tw-plugin",
+  "name": "@x7ddf74479jn5/tw-plugin-psui",
   "version": "0.0.1",
-  "description": "",
+  "description": "The Tailwind CSS plugin for PSUI",
+  "author": {
+    "name": "x7ddf74479jn5",
+    "url": "https://github.com/x7ddf74479jn5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x7ddf74479jn5/psui.git",
+    "directory": "packages/tw-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/x7ddf74479jn5/psui/issues"
+  },
+  "keywords": [
+    "tailwind"
+  ],
+  "sideEffects": false,
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "x7ddf74479jn5",
-  "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   }

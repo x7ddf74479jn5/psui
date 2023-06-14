@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -31,10 +35,10 @@ importers:
 
   apps/playground:
     dependencies:
-      '@psui/components':
+      '@x7ddf74479jn5/psui':
         specifier: workspace:*
         version: link:../../packages/components
-      '@psui/tw-plugin':
+      '@x7ddf74479jn5/tw-plugin-psui':
         specifier: workspace:*
         version: link:../../packages/tw-plugin
       next:
@@ -162,9 +166,6 @@ importers:
         specifier: 1.12.0
         version: 1.12.0
     devDependencies:
-      '@psui/tw-plugin':
-        specifier: workspace:*
-        version: link:../tw-plugin
       '@storybook/addon-a11y':
         specifier: 7.0.17
         version: 7.0.17(react-dom@18.2.0)(react@18.2.0)
@@ -195,6 +196,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.6
         version: 18.0.11
+      '@x7ddf74479jn5/tw-plugin-psui':
+        specifier: workspace:*
+        version: link:../tw-plugin
       autoprefixer:
         specifier: 10.4.13
         version: 10.4.13(postcss@8.4.21)

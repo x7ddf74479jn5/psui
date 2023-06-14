@@ -1,18 +1,25 @@
 {
-  "name": "@psui/components",
+  "name": "@x7ddf74479jn5/psui",
   "version": "0.0.1",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      }
-    }
+  "description": "An UI component library composed with Tailwind CSS and Radix-UI",
+  "author": {
+    "name": "x7ddf74479jn5",
+    "url": "https://github.com/x7ddf74479jn5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x7ddf74479jn5/psui.git",
+    "directory": "packages/components"
+  },
+  "bugs": {
+    "url": "https://github.com/x7ddf74479jn5/psui/issues"
+  },
+  "keywords": [
+    "components",
+    "ui",
+    "tailwind",
+    "radix-ui"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -38,7 +45,6 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@psui/tw-plugin": "workspace:*",
     "@storybook/addon-a11y": "7.0.17",
     "@storybook/addon-essentials": "^7.0.15",
     "@storybook/addon-interactions": "^7.0.15",
@@ -49,6 +55,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@x7ddf74479jn5/tw-plugin-psui": "workspace:*",
     "autoprefixer": "10.4.13",
     "eslint": "^8.41.0",
     "eslint-config-psui": "workspace:*",
