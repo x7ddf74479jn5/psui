@@ -1,6 +1,6 @@
-<h1 align="center">PSUI</h1>
+# PSUI
 
-<p align="center">Tailwind CSS & Radix UI</p>
+完全なドキュメントは、[Docs ⋅ PSUI](https://x7ddf74479jn5.github.io/psui/?path=/docs/getting-started-introduction--docs)でご覧ください。
 
 ## Features
 
