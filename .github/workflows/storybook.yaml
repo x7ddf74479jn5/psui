@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "packages/components/**"
+  workflow_dispatch:
 
 defaults:
   run:
@@ -33,12 +34,12 @@ jobs:
           restore-keys: |
             storybook-
         env:
-          STORYBOOK_PATH: "storybook-staic"
+          STORYBOOK_PATH: storybook-staic
       - name: Build storybook
         run: pnpm run build-storybook
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: storybook-static
+          path: ./packages/components/storybook-static
 
   deploy:
     timeout-minutes: 5
