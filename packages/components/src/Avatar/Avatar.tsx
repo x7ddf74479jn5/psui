@@ -6,7 +6,7 @@ import { cn } from "../utils";
 /**
  * ユーザーを表現するためのフォールバックを持つ画像要素です。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/avatar"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/avatar
  *
  * Root Default Classes: ~ "relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full" ~
  *

@@ -8,7 +8,7 @@ import { cn } from "../utils";
 /**
  * ウェブサイトをナビゲートするためのリンク集です。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/navigation-menu"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/navigation-menu
  *
  * Root Default Classes: ~ "relative z-10 flex flex-1 items-center justify-center" ~
  *

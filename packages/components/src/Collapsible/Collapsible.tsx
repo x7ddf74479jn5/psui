@@ -3,7 +3,7 @@ import * as CollapsiblePrimitive from "@radix-ui/react-collapsible";
 /**
  * パネルの拡大・縮小を行うインタラクティブなコンポーネントです。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/collapsible"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/collapsible
  *
  */
 export const Collapsible = () => {

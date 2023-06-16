@@ -7,7 +7,7 @@ import { cn } from "../utils";
 /**
  * 重要な内容でユーザーを中断させ、応答を期待するモーダルダイアログです。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/alert-dialog"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/alert-dialog
  *
  * Portal Default Classes: ~ "fixed inset-0 z-50 flex items-end justify-center sm:items-center" ~
  *

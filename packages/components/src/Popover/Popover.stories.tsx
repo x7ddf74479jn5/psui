@@ -5,7 +5,7 @@ import { Popover } from "./Popover";
 import { Input } from "../Input";
 
 const meta = {
-  title: "Popover",
+  title: "Components/Popover",
   component: Popover,
   // @ts-ignore
   subcomponents: { ...Popover },
@@ -16,10 +16,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {
-    buttonContent: null,
-    children: null,
-  },
   render: (_args) => (
     <Popover.Root>
       <Popover.Trigger asChild>

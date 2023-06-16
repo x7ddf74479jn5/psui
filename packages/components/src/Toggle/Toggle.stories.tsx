@@ -5,8 +5,10 @@ import { Toggle, toggleVariantsConfig } from "./Toggle";
 import { getKeys } from "../utils";
 
 const meta = {
-  title: "Toggle",
+  title: "Components/Toggle",
   component: Toggle,
+  // @ts-ignore
+  subcomponents: { ...Toggle },
   tags: ["autodocs"],
   argTypes: {
     variant: {
@@ -33,10 +35,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  // args: {
-  //   variant: "default",
-  //   size: "default",
-  // },
   render: (args) => {
     const defaultVariants = toggleVariantsConfig.defaultVariants;
 

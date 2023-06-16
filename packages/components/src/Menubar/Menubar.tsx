@@ -7,7 +7,7 @@ import { cn } from "../utils";
 /**
  * デスクトップアプリケーションで一般的な視覚的に永続的なメニューで、一貫したコマンドのセットに素早くアクセスできるようにします。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/menubar"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/menubar
  *
  * Root Default Classes: ~ "flex h-10 items-center space-x-1 rounded-md border border-line bg-overlay " ~
  *

@@ -7,7 +7,7 @@ import { cn } from "../utils";
 /**
  * ボタンをきっかけに、ユーザーに対してメニュー（アクションや機能のセットなど）を表示する。
  *
- * [Radix Docs]{@link "https://www.radix-ui.com/docs/primitives/components/dropdown-menu"}
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/dropdown-menu
  *
  * SubTrigger Default Classes: ~ "flex cursor-default select-none items-center rounded-md-sm py-1.5 px-2 text-sm font-medium outline-none focus:bg-primary focus:text-primary-content data-[state=open]:bg-overlay-focus" ~
  *

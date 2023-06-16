@@ -2,8 +2,15 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./HoverCard";
 
+/**
+ * リンクの後ろにあるコンテンツをプレビューするためのものです。
+ *
+ * [Radix Docs] @see https://www.radix-ui.com/docs/primitives/components/hover-card
+ *
+ * HoverCardContent Default Classes: ~ "z-50 w-64 rounded-md border border-line bg-white p-4 shadow-theme-md outline-none animate-in zoom-in-90  " ~
+ */
 const meta = {
-  title: "HoverCard",
+  title: "Components/HoverCard",
   component: HoverCard,
   // @ts-ignore
   subcomponents: { HoverCardContent, HoverCardTrigger },
@@ -11,6 +18,7 @@ const meta = {
 } satisfies Meta<typeof HoverCard>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {

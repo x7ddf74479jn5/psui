@@ -1,0 +1,50 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Concepts/Customization" />
+
+# Customization
+
+すぐに使えるスタイルと Tailwind の完全なカスタマイズを提供するために、PSUI のコンポーネントは tailwind-merge を使用して、新しいスタイルを書き、デフォルトを上書きすることができるようにします。
+
+## Usage
+
+```tsx
+import { twMerge } from "tailwind-merge";
+
+
+export const ExampleComponent = ({className}:{className:string}) => {
+  return <div className={twMerge("p-2 bg-base", className)>I'm an example!</div>
+}
+
+```
+
+コンポーネント使用時
+
+```tsx
+import { ExampleComponent } from "@x7ddf74479jn5/psui";
+
+<ExampleComponent className="p-4" />;
+// p-4は上のブロックのp-2を上書きし、最終的なスタイルは"p-4 bg-base"になります。
+```
+
+## サブコンポーネントを使ったコンポーネントのスタイリング
+
+PSUI では、1 つの `className` prop によって可能な限り多くの制御を行えるように努めています。しかし、特にサブコンポーネントが存在する場合（例えば、`<Select>`の中に`<Select.Item>`がある場合）、ひとつの prop でコンポーネントをカスタマイズすることが常に可能というわけではありません。このような場合、PSUI は Radix と同じサブコンポーネントをすべて公開しており、サブコンポーネントの `className` プロップを使用してカスタマイズすることができます。
+
+```tsx
+// デフォルトのクラスは、各コンポーネントのインテリセンスで公開されるため、
+// どのようなスタイルを上書きしているのかを確認することができます。
+<Popover.Root>
+  <Popover.Trigger className="text-teal-600">
+    <InfoCircledIcon />
+  </Popover.Trigger>
+  <Popover.Portal>
+    <Popover.Content className="p-8 bg-teal-600 text-white">
+      <Popover.Arrow className="fill-teal-600/>
+      <div className="text-sm">
+        カスタムスタイルを持つポップオーバーの例です！
+      </div>
+    </Popover.Content>
+  </Popover.Portal>
+</Popover.Root>
+```

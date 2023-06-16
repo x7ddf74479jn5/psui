@@ -5,8 +5,10 @@ import { Checkbox } from "../Checkbox";
 import { Label } from "./Label";
 
 const meta = {
-  title: "Label",
+  title: "Components/Label",
   component: Label,
+  // @ts-ignore
+  subcomponents: { ...Label },
   tags: ["autodocs"],
 } satisfies Meta<typeof Label>;
 
@@ -15,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "LABEL",
+    children: "ラベル",
   },
   render: (args) => (
     <div className="flex items-center gap-4">

@@ -4,7 +4,7 @@ import { Label } from "../Label";
 import { TextArea } from "./TextArea";
 
 const meta = {
-  title: "TextArea",
+  title: "Components/TextArea",
   component: TextArea,
   tags: ["autodocs"],
 } satisfies Meta<typeof TextArea>;
