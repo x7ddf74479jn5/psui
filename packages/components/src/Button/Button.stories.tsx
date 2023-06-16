@@ -51,6 +51,7 @@ export const Variants: Story = {
       <div className="flex flex-wrap gap-4">
         {variants.map((variant) => (
           <Button
+            key={variant}
             size="default"
             {...args}
             onClick={action("clicked")}
@@ -71,6 +72,7 @@ export const Sizes: Story = {
       <div className="flex gap-4">
         {sizes.map((size) => (
           <Button
+            key={size}
             variant="default"
             {...args}
             size={size}

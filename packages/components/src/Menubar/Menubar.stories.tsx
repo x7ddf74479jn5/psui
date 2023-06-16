@@ -32,6 +32,8 @@ import { Menubar } from "./Menubar";
 const meta = {
   title: "Components/Menubar",
   component: Menubar,
+  // @ts-ignore
+  subcomponents: { ...Menubar },
   tags: ["autodocs"],
 } satisfies Meta<typeof Menubar>;
 

@@ -7,6 +7,8 @@ import { Input } from "../Input";
 const meta = {
   title: "Components/Popover",
   component: Popover,
+  // @ts-ignore
+  subcomponents: { ...Popover },
   tags: ["autodocs"],
 } satisfies Meta<typeof Popover>;
 

@@ -29,6 +29,8 @@ import { AlertDialog } from "./AlertDialog";
 const meta = {
   title: "Components/AlertDialog",
   component: AlertDialog,
+  // @ts-ignore
+  subcomponents: { ...AlertDialog },
   tags: ["autodocs"],
 } satisfies Meta<typeof AlertDialog>;
 

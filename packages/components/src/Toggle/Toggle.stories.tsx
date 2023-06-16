@@ -7,6 +7,8 @@ import { getKeys } from "../utils";
 const meta = {
   title: "Components/Toggle",
   component: Toggle,
+  // @ts-ignore
+  subcomponents: { ...Toggle },
   tags: ["autodocs"],
   argTypes: {
     variant: {

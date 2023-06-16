@@ -5,6 +5,8 @@ import { Checkbox } from "./Checkbox";
 const meta = {
   title: "Components/Checkbox",
   component: Checkbox,
+  // @ts-ignore
+  subcomponents: { ...Checkbox },
   tags: ["autodocs"],
 } satisfies Meta<typeof Checkbox>;
 

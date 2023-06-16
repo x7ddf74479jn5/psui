@@ -29,6 +29,8 @@ import { ContextMenu } from "./ContextMenu";
 const meta = {
   title: "Components/ContextMenu",
   component: ContextMenu,
+  // @ts-ignore
+  subcomponents: { ...ContextMenu },
   tags: ["autodocs"],
 } satisfies Meta<typeof ContextMenu>;
 

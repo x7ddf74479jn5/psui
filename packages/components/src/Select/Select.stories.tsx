@@ -22,6 +22,8 @@ import { Select } from "./Select";
 const meta = {
   title: "Components/Select",
   component: Select,
+  // @ts-ignore
+  subcomponents: { ...Select },
   tags: ["autodocs"],
 } satisfies Meta<typeof Select>;
 

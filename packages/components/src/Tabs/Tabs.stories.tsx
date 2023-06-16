@@ -8,6 +8,8 @@ import { Input } from "../Input";
 const meta = {
   title: "Components/Tabs",
   component: Tabs,
+  // @ts-ignore
+  subcomponents: { ...Tabs },
   tags: ["autodocs"],
 } satisfies Meta<typeof Tabs>;
 

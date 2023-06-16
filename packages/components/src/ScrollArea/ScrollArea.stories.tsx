@@ -5,6 +5,8 @@ import { ScrollArea, ScrollBar } from "./ScrollArea";
 const meta = {
   title: "Components/ScrollArea",
   component: ScrollArea,
+  // @ts-ignore
+  subcomponents: { ScrollBar },
   tags: ["autodocs"],
 } satisfies Meta<typeof ScrollArea>;
 

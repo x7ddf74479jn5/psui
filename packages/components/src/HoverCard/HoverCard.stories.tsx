@@ -12,6 +12,8 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "./HoverCard";
 const meta = {
   title: "Components/HoverCard",
   component: HoverCard,
+  // @ts-ignore
+  subcomponents: { HoverCardContent, HoverCardTrigger },
   tags: ["autodocs"],
 } satisfies Meta<typeof HoverCard>;
 

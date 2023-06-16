@@ -18,6 +18,8 @@ import { Label } from "../Label";
 const meta = {
   title: "Components/RadioGroup",
   component: RadioGroup,
+  // @ts-ignore
+  subcomponents: { ...RadioGroup },
   tags: ["autodocs"],
 } satisfies Meta<typeof RadioGroup>;
 

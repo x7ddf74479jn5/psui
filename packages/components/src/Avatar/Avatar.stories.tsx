@@ -16,6 +16,8 @@ import { Avatar } from "./Avatar";
 const meta = {
   title: "Components/Avatar",
   component: Avatar,
+  // @ts-ignore
+  subcomponents: { ...Avatar },
   tags: ["autodocs"],
 } satisfies Meta<typeof Avatar>;
 

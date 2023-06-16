@@ -17,6 +17,8 @@ import { Accordion } from "./Accordion";
 const meta = {
   title: "Components/Accordion",
   component: Accordion,
+  // @ts-ignore
+  subcomponents: { ...Accordion },
   tags: ["autodocs"],
   argTypes: {
     type: {

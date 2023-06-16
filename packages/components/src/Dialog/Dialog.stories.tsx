@@ -31,6 +31,8 @@ import { Dialog } from "./Dialog";
 const meta = {
   title: "Components/Dialog",
   component: Dialog,
+  // @ts-ignore
+  subcomponents: { ...Dialog },
   tags: ["autodocs"],
 } satisfies Meta<typeof Dialog>;
 

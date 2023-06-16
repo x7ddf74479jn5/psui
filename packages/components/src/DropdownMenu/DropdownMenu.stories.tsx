@@ -45,6 +45,8 @@ import { Button } from "../Button";
 const meta = {
   title: "Components/DropdownMenu",
   component: DropdownMenu,
+  // @ts-ignore
+  subcomponents: { ...DropdownMenu },
   tags: ["autodocs"],
 } satisfies Meta<typeof DropdownMenu>;
 

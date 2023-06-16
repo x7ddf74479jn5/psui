@@ -7,6 +7,8 @@ import { Label } from "./Label";
 const meta = {
   title: "Components/Label",
   component: Label,
+  // @ts-ignore
+  subcomponents: { ...Label },
   tags: ["autodocs"],
 } satisfies Meta<typeof Label>;
 

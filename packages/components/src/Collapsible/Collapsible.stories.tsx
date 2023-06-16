@@ -13,6 +13,8 @@ import { Collapsible } from "./Collapsible";
 const meta = {
   title: "Components/Collapsible",
   component: Collapsible,
+  // @ts-ignore
+  subcomponents: { ...Collapsible },
   tags: ["autodocs"],
 } satisfies Meta<typeof Collapsible>;
 
