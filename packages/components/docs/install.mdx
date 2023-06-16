@@ -9,9 +9,9 @@ import { Meta } from "@storybook/blocks";
 このガイドでは、Tailwind が設定された React プロジェクトがすでにあることを前提としています。
 
 1. `pnpm add @x7ddf74479jn5/psui`と`pnpm add -D @x7ddf74479jn5/tw-plugin-psui`を実行します。
-2. tailwind.config.js`を修正し、インクルードします：
+2. `tailwind.config.js`を修正し、インクルードします：
 
-- `"./node_modules/@x7ddf74479jn5/psui/dist/**/*.{js,mjs}",`を`content`配列の中へ
+- `"./node_modules/@x7ddf74479jn5/psui/dist/**/*.{js,mjs}"`を`content`配列の中へ
 - `require("@x7ddf74479jn5/tw-plugin-psui")`を`plugins`配列の中へ
 
 ```js
@@ -30,7 +30,7 @@ module.exports = {
 
 CSS 変数をグローバル css ファイルに追加します。[Concepts/Colors](?path=/docs/concepts-colors--docs)を参考にしてください。
 
-`root`の後に置いた最初のテーマがデフォルトで使用されます。もしあなたのサイトが複数のテーマを使用しないのであれば、これだけで十分です。複数のテーマを切り替えるには、javascript を使って `<html>` の `data-theme` 属性を更新すればよい。
+`root`の後に置いた最初のテーマがデフォルトで使用されます。もしあなたのサイトが複数のテーマを使用しないのであれば、これだけで十分です。複数のテーマを切り替えるには、JavaScript を使って `<html>` の `data-theme` 属性を更新すれば OK です。
 
 ```css
 @tailwind base;
