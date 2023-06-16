@@ -4,15 +4,15 @@ description: Setup Node.js and restore packages
 runs:
   using: composite
   steps:
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-        cache: "pnpm"
     - uses: pnpm/action-setup@v2.2.4
       with:
         version: 8.6
         run_install: false
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: pnpm
     - name: Get pnpm store directory
       id: pnpm-store
       shell: bash
