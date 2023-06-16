@@ -11,18 +11,20 @@ export const ThemeProvider = ({
   theme,
 }: {
   children: React.ReactNode;
-  theme: Theme;
+  theme: Capitalize<Theme>;
 }) => {
+  const newTheme = theme.toLowerCase() as Theme;
+
   useEffect(() => {
     const html = document.getElementsByTagName("html")[0];
-    html.setAttribute("data-theme", theme);
+    html.setAttribute("data-theme", newTheme);
 
     return () => {
       html.removeAttribute("data-theme");
     };
-  }, [theme]);
+  }, [newTheme]);
 
   return (
-    <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={newTheme}>{children}</ThemeContext.Provider>
   );
 };
