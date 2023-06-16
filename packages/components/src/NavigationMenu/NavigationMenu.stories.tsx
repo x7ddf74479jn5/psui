@@ -26,6 +26,8 @@ import { cn } from "../utils";
 const meta = {
   title: "Components/NavigationMenu",
   component: NavigationMenu,
+  // @ts-ignore
+  subcomponents: { ...NavigationMenu },
   tags: ["autodocs"],
 } satisfies Meta<typeof NavigationMenu>;
 
@@ -92,7 +94,7 @@ export const Default: Story = {
                     <LinkTo
                       key={component.title}
                       kind={component.title}
-                      title={component.title}
+                      title={`Components/${component.title}`}
                       story="Default"
                     >
                       <div

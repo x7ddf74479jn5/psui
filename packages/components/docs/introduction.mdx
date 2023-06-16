@@ -1,0 +1,40 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import LinkTo from "@storybook/addon-links/react";
+
+<Meta title="Getting Started/Introduction" />
+
+import * as ButtonStories from "../src/Button/Button.stories";
+
+PSUI は、React と Tailwind のために設計された UI ライブラリです。以下のような問題に対処することを目的としています：
+
+- MUI、Chakra、Bootstrap のようなコンポーネントライブラリは、箱から出したらとても素敵ですが、カスタマイズが難しい場合があります。
+- Vanilla Tailwind や Flowbite のようなライブラリでは、テーマ設定が面倒になることがあります。すべてのコンポーネントにライトモードの色とダークモードの色を定義する必要があるのが嫌です。
+- Vanilla Tailwind は、異なるスタイルを持つプロジェクト間での再利用性が低い。
+- Daisy UI のような CSS のみのライブラリは、アクセシビリティの問題がある。
+- Radix や Headless UI のようなヘッドレスライブラリは、ヘッドレスライブラリです。要は、スタイルなしということなのですが、その分、スタイル付けに多くの時間を費やすことになります。
+
+とはいえ、これらのライブラリにも好きなところはたくさんあります。Tailwind のスピードとカスタマイズ性、Daisy UI のテーマ性、Radix のアクセシビリティ、そして MUI の箱から出してすぐに使える作品。PSUI は、私がこれらのライブラリで気に入っている部分をすべて組み合わせ、問題点を最小限に抑える試みです。
+
+Radix UI & Tailwind CSS の組み合わせの UI コンポーネントライブラリは<a href="https://twitter.com/shadcn">Shadcn</a>の<a href="https://ui.shadcn.com/">shadcn/ui</a>が有名です。出発点として shadcn/ui のコンポーネントの多くを使用しました。カラーシステムのない同様のライブラリをお探しなら、ぜひチェックしてみてください！
+
+## Key Features
+
+### Themeable & Reusable
+
+PSUI は Tailwind を拡張し、コンポーネントがあらかじめスタイル付けされたセマンティックカラーシステムを追加しています。これにより、アプリ間でテーマの切り替えやコンポーネントの再利用が容易になります。詳しくはこちら：[カラーシステム](?path=/docs/concepts-colors--docs)。
+
+### Accessibility
+
+PSUI は、アコーディオンやセレクトなどのインタラクティブなコンポーネントに Radix Primitives を使用しています。詳しくはこちら：[アクセシビリティ](?path=/docs/concepts-accessibility--docs)。
+
+### Customizable
+
+コンポーネントには、箱から出しても見栄えのする賢明なデフォルトスタイルが付属していますが、Tailwind ユーティリティクラスで完全にカスタマイズすることができます。PSUI では、[tailwind-merge](https://www.npmjs.com/package/tailwind-merge)を使用して、この処理を行います。詳しくはこちら：[カスタマイズ](?path=/docs/concepts-customization--docs)。
+
+## Example
+
+下のプレビューでテーマを変えてみてください。同じ JSX で Button が異なるスタイルになることがお分かりいただけたでしょうか？2 つ目のボタンは、デフォルトのスタイルを簡単に上書きできることを示す例です。
+
+<Canvas>
+  <Story of={ButtonStories.Default} />
+</Canvas>

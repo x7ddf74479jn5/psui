@@ -1,0 +1,100 @@
+import { Meta } from "@storybook/blocks";
+import { colors } from "./colors.ts";
+import { ColorTable } from "./colorTable.tsx";
+
+<Meta title="Concepts/Colors" />
+
+# Color System
+
+## Overview
+
+このシステムは、明るい背景色から暗い前景色へ向かうテーマや、その逆のテーマにも対応できるように設計されています。このため、PSUI では 100 ～ 900 の色分けはせず、「明 → 暗」の固定的な色分けを意味します。
+
+## Color Modifiers
+
+### 1-3 (基底) (e.g., base-2 or base-3)
+
+1 が最も目立つ色、3 が最も目立たない色 背景やテキストなど、微妙なコントラストが必要な要素に使用します。
+
+### 100-900 (明暗) (e.g., primary-100, secondary-800)
+
+100 が最も明るい色で、900 が最も暗い色です。これは、Tailwind が色に使用するスケールです。PSUI のコンポーネントは、デフォルトのスタイルにこれらを使用していませんが、Tailwind のデフォルトテーマから使用することができます。
+
+### content (e.g., primary-content, text-base-content-)
+
+背景色の上にあるテキストなどのコンテンツに使用します。base や overlay のような背景色では、content 修飾子は基底修飾子のどちらかと一緒に使うことができます。
+
+Examples:
+
+- base-content
+- base-content-2
+
+### focus (e.g., secondary-focus, success-focus)
+
+フォーカスカラーは、ボタン、アラート、アイコンなどの要素に使用されます。要素がフォーカスされたり、ホバーされたときに使用されます。
+
+### subtle (e.g., hover:bg-secondary-subtle)
+
+ボタン、アラート、アイコンなどの要素に使用される微妙な色です。これらの色は、要素がホバーされたりフォーカスされたりしたときの背景色としてよく使用されます。
+
+## Colors
+
+### Base
+
+ベースカラーは、背景色として使用します。
+
+<ColorTable colorPrefix="base" />
+
+### Overlay
+
+オーバーレイカラーは、モーダル、ドロップダウン、メニューなどのフローティング要素の背景色に使用されます。ベースカラーと類似しているが、その上に配置されるベースカラーとは異なる色である必要があります。
+
+<ColorTable colorPrefix="overlay" />
+
+### Line
+
+ラインカラーは、ボーダーや仕切りなどに使用されます。ベースとなる色と似ていますが、異なる色である必要があります。
+
+<ColorTable colorPrefix="line" />
+
+### Input
+
+インプットカラーは、テキスト入力やテキストエリアなどの入力要素に使用されます。これらの色は、類似している必要がありますが、それらが上になる基本的な色とは異なるものです。
+
+<ColorTable colorPrefix="input" />
+
+### Primary
+
+プライマリーカラーは、アクションボタンやリンクなど、インターフェイスの主要なアクションに使用されます。原色は個性的であるべきで、ブランドカラーの一つである可能性が高いです。
+
+<ColorTable colorPrefix="primary" />
+
+### secondary
+
+セカンダリーカラーは、プライマリーカラーよりも優先順位の低いアクションに使用されます。タグや重要度の低いボタン、アイコンなど、強調したい要素にも適しています。
+
+<ColorTable colorPrefix="secondary" />
+
+### Info
+
+インフォカラーは、アラート、アイコンなど、情報的な要素に使用されます。
+
+<ColorTable colorPrefix="info" />
+
+### Success
+
+サクセスカラーは、アラート、アイコンなどのサクセス要素に使用されます。
+
+<ColorTable colorPrefix="success" />
+
+### Error
+
+エラーカラーは、アラート、アイコンなどのエラー要素に使用されます。
+
+<ColorTable colorPrefix="danger" />
+
+### Alert
+
+アラート、アイコンなど、警告を発する要素に使用される色です。
+
+<ColorTable colorPrefix="warning" />
