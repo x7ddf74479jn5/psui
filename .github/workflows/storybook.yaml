@@ -34,7 +34,7 @@ jobs:
           restore-keys: |
             storybook-
         env:
-          STORYBOOK_PATH: storybook-staic
+          STORYBOOK_PATH: ./packages/components/storybook-static
       - name: Build storybook
         run: pnpm run build-storybook
       - uses: actions/upload-pages-artifact@v1

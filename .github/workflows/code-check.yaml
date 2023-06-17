@@ -3,6 +3,9 @@ name: Code check
 on:
   pull_request:
     branches: ["*"]
+    paths:
+      - "apps/**"
+      - "packages/**"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

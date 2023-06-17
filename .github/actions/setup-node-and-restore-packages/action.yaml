@@ -12,7 +12,6 @@ runs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
-        cache: pnpm
     - name: Get pnpm store directory
       id: pnpm-store
       shell: bash
@@ -29,6 +28,4 @@ runs:
     - name: Install dependencies
       shell: bash
       run: |
-        if ${{ steps.pnpm-cache.outputs.cache-hit != 'true' }}; then
-         pnpm install
-        fi
+        pnpm install
