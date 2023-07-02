@@ -16,7 +16,7 @@ export const ThemeProvider = ({
   const newTheme = theme.toLowerCase() as Theme;
 
   useEffect(() => {
-    const html = document.getElementsByTagName("html")[0];
+    const html = document.documentElement;
     html.setAttribute("data-theme", newTheme);
 
     return () => {
