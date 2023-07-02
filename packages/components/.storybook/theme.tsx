@@ -1,4 +1,4 @@
-import React, { createContext, useEffect } from "react";
+import React, { createContext, useLayoutEffect } from "react";
 
 type Theme = "default" | "bubblegum" | "gunmetal";
 
@@ -15,7 +15,7 @@ export const ThemeProvider = ({
 }) => {
   const newTheme = theme.toLowerCase() as Theme;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const html = document.documentElement;
     html.setAttribute("data-theme", newTheme);
 
