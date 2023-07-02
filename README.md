@@ -1,6 +1,6 @@
-<h1 align="center">PSUI</h1>
-
-<p align="center">Tailwind CSS & Radix UI</p>
+<h1 style="text-align: center;">PSUI</h1>
+<img width="640" height="420" src="./docs/psui_logo.webp" alt="PSUI Logo" style="object-fit: contain;" >
+<p style="text-align: center;" >Tailwind CSS & Radix UI</p>
 
 ## Features
 
