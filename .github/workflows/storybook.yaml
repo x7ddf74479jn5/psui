@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "packages/components/**"
+      - "!packages/components/**/*.md"
   workflow_dispatch:
 
 defaults:
@@ -58,21 +59,30 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 
-  set-status:
+  test:
     runs-on: ubuntu-latest
     needs: deploy
-    permissions:
-      checks: write
-      pull-requests: write
-      statuses: write
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v3
-      - name: Set status
-        uses: Sibz/github-status-action@v1
+      - uses: ./.github/actions/setup-node-and-restore-packages
+      - name: Get installed Playwright version
+        id: playwright-version
+        run: echo "::set-output name=version::$( sh .github/scripts/get-playwright-version.sh )"
+      - name: Cache playwright binaries
+        uses: actions/cache@v3
+        id: playwright-cache
         with:
-          authToken: ${{ secrets.GITHUB_TOKEN }}
-          context: "GitHub Pages"
-          description: "Deployment has completed"
-          state: "success"
-          sha: ${{ github.sha }}
-          target_url: ${{ needs.deploy.outputs.url }}
+          path: ~/.cache/ms-playwright
+          key: "${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.version }}"
+          restore-keys: ${{ runner.os }}-playwright-
+      - name: Install Playwright browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps
+      - name: Install Playwright system dependencies
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps
+      - name: Run Storybook tests
+        run: pnpm test-storybook
+        env:
+          TARGET_URL: ${{needs.deploy.outputs.url }}

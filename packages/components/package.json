@@ -42,7 +42,8 @@
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "7.0.24",
@@ -52,11 +53,13 @@
     "@storybook/blocks": "^7.0.24",
     "@storybook/react": "^7.0.24",
     "@storybook/react-vite": "^7.0.24",
+    "@storybook/test-runner": "0.11.0",
     "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@x7ddf74479jn5/tw-plugin-psui": "workspace:*",
     "autoprefixer": "10.4.14",
+    "axe-playwright": "1.2.3",
     "eslint": "^8.44.0",
     "eslint-config-psui": "workspace:*",
     "postcss": "8.4.24",
