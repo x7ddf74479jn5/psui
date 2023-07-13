@@ -1,7 +1,6 @@
 {
-  "extends": "./tsconfig.build.json",
+  "extends": "tsconfig/react-library",
   "compilerOptions": {
-    "declaration": false,
-    "declarationMap": false
+    "noEmit": true
   }
 }
