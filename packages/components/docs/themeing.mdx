@@ -4,7 +4,19 @@ import { Meta } from "@storybook/blocks";
 
 # Themeing
 
-PSUI は、Tailwind で美しいライト＆ダークモードやマルチテーマ対応を設定する最も簡単な方法です！
+PSUI は、Tailwind で美しいライト＆ダークモードやマルチテーマ対応を設定する最も簡単な方法です！すぐに使えるようにプリセットのテーマも同梱されています。
+
+## Quick Start
+
+グローバル css ファイルを編集します。プリセットテーマ _(default, bubblegum, gunmetal)_ を使うには下記のようにインポートします。
+
+```css
+@import url("@x7ddf74479jn5/psui/dist/themes/default.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
 ## PSUI における Theme の仕組み
 

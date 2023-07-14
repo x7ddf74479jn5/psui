@@ -43,8 +43,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && vite build",
+    "build": "tsc -p tsconfig.build.json && vite build && pnpm cpx",
     "dev": "vite --watch",
+    "cpx": "npx cpx -C 'src/themes/*.css' 'dist/themes'",
     "lint": "eslint \"src/*.{ts,tsx}\" --cache",
     "lint:fix": "eslint --fix \"src/*.{ts,tsx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",

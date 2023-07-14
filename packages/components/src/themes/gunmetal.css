@@ -1,0 +1,55 @@
+@layer base {
+  :root {
+    --base: hsl(120, 2%, 10%);
+    --base-focus: hsl(120, 2%, 27.6%);
+    --base-2: hsl(120, 2%, 14.4%);
+    --base-2-focus: hsl(120, 2%, 18.8%);
+    --base-content: hsl(120, 2%, 100%);
+    --base-content-2: hsl(120, 2%, 90%);
+    --base-content-3: hsl(120, 2%, 70%);
+    --overlay: hsl(120, 2%, 17.7%);
+    --overlay-focus: hsl(120, 2%, 37.5%);
+    --overlay-2: hsl(120, 2%, 25.4%);
+    --overlay-2-focus: hsl(120, 2%, 37.5%);
+    --overlay-content: hsl(120, 2%, 100%);
+    --overlay-content-2: hsl(120, 2%, 90%);
+    --overlay-content-3: hsl(120, 2%, 80%);
+    --line: hsl(120, 2%, 1.2%);
+    --line-focus: hsl(120, 2%, 17.7%);
+    --input: hsl(120, 2%, 13.3%);
+    --input-focus: hsl(120, 2%, 13.3%);
+    --input-content: hsl(120, 2%, 100%);
+    --input-content-2: hsl(120, 2%, 80%);
+    --primary: hsl(180, 21%, 74%);
+    --primary-focus: hsl(180, 21%, 68.5%);
+    --primary-subtle: hsl(180, 21%, 100%);
+    --primary-content: hsl(180, 21%, 0%);
+    --primary-content-inverse: hsl(180, 21%, 100%);
+    --primary-subtle-content: hsl(180, 21%, 5%);
+    --secondary: hsl(0, 0%, 40%);
+    --secondary-focus: hsl(0, 0%, 34.5%);
+    --secondary-subtle: hsl(0, 0%, 67.5%);
+    --secondary-subtle-content: hsl(0, 0%, 0%);
+    --secondary-content: hsl(0, 0%, 100%);
+    --info: hsl(212, 50%, 40%);
+    --info-focus: hsl(212, 50%, 34.5%);
+    --info-subtle: hsl(212, 50%, 67.5%);
+    --info-subtle-content: hsl(212, 50%, 0%);
+    --info-content: hsl(212, 50%, 100%);
+    --danger: hsl(0, 75%, 42%);
+    --danger-focus: hsl(0, 75%, 36.5%);
+    --danger-subtle: hsl(0, 75%, 69.5%);
+    --danger-subtle-content: hsl(0, 75%, 0%);
+    --danger-content: hsl(0, 75%, 100%);
+    --success: hsl(159, 61%, 41%);
+    --success-focus: hsl(159, 61%, 35.5%);
+    --success-subtle: hsl(159, 61%, 16%);
+    --success-subtle-content: hsl(159, 61%, 100%);
+    --success-content: hsl(159, 61%, 0%);
+    --warning: hsl(49, 95%, 53%);
+    --warning-focus: hsl(49, 95%, 47.5%);
+    --warning-subtle: hsl(49, 95%, 28%);
+    --warning-subtle-content: hsl(49, 95%, 100%);
+    --warning-content: hsl(49, 95%, 0%);
+  }
+}

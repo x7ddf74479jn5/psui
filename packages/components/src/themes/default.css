@@ -1,0 +1,54 @@
+@layer base {
+  :root {
+    --base: hsl(60, 5%, 96%);
+    --base-focus: hsl(60, 5%, 80%);
+    --base-2: hsl(60, 5%, 92%);
+    --base-2-focus: hsl(60, 5%, 88%);
+    --base-content: hsl(60, 5%, 8%);
+    --base-content-2: hsl(60, 5%, 19%);
+    --base-content-3: hsl(60, 5%, 41%);
+    --overlay: hsl(60, 5%, 89%);
+    --overlay-focus: hsl(60, 5%, 71%);
+    --overlay-2: hsl(60, 5%, 82%);
+    --overlay-2-focus: hsl(60, 5%, 71%);
+    --overlay-content: hsl(60, 5%, 8%);
+    --overlay-content-2: hsl(60, 5%, 19%);
+    --overlay-content-3: hsl(60, 5%, 30%);
+    --line: hsl(60, 5%, 87.2%);
+    --line-focus: hsl(60, 5%, 72.2%);
+    --input: hsl(60, 5%, 99.3%);
+    --input-focus: hsl(60, 5%, 99.3%);
+    --input-content: hsl(60, 5%, 14.3%);
+    --input-content-2: hsl(60, 5%, 36.3%);
+    --primary: hsl(41, 100%, 51%);
+    --primary-focus: hsl(41, 100%, 45.5%);
+    --primary-subtle: hsl(41, 100%, 78.5%);
+    --primary-content: hsl(41, 100%, 0%);
+    --primary-subtle-content: hsl(41, 100%, 0%);
+    --secondary: hsl(200, 97%, 41%);
+    --secondary-focus: hsl(200, 97%, 35.5%);
+    --secondary-subtle: hsl(200, 97%, 68.5%);
+    --secondary-subtle-content: hsl(200, 97%, 0%);
+    --secondary-content: hsl(200, 97%, 100%);
+    --info: hsl(212, 50%, 40%);
+    --info-focus: hsl(212, 50%, 34.5%);
+    --info-subtle: hsl(212, 50%, 67.5%);
+    --info-subtle-content: hsl(212, 50%, 0%);
+    --info-content: hsl(212, 50%, 100%);
+    --danger: hsl(0, 75%, 42%);
+    --danger-focus: hsl(0, 75%, 36.5%);
+    --danger-subtle: hsl(0, 75%, 69.5%);
+    --danger-subtle-content: hsl(0, 75%, 0%);
+    --danger-content: hsl(0, 75%, 100%);
+    --success: hsl(159, 61%, 41%);
+    --success-focus: hsl(159, 61%, 35.5%);
+    --success-subtle: hsl(159, 61%, 16%);
+    --success-subtle-content: hsl(159, 61%, 100%);
+    --success-content: hsl(159, 61%, 0%);
+    --warning: hsl(49, 95%, 53%);
+    --warning-focus: hsl(49, 95%, 47.5%);
+    --warning-subtle: hsl(49, 95%, 28%);
+    --warning-subtle-content: hsl(49, 95%, 100%);
+    --warning-content: hsl(49, 95%, 0%);
+  }
+}
