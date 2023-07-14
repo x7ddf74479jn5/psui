@@ -1,5 +1,15 @@
 # @x7ddf74479jn5/psui
 
+## 0.1.0
+
+### Minor Changes
+
+- [#22](https://github.com/x7ddf74479jn5/psui/pull/22) [`6aed634`](https://github.com/x7ddf74479jn5/psui/commit/6aed634d272b005a2a6d8cbfa22cd2a976d79083) Thanks [@x7ddf74479jn5](https://github.com/x7ddf74479jn5)! - ✨ feat: include preset themes
+
+### Patch Changes
+
+- [#22](https://github.com/x7ddf74479jn5/psui/pull/22) [`6aed634`](https://github.com/x7ddf74479jn5/psui/commit/6aed634d272b005a2a6d8cbfa22cd2a976d79083) Thanks [@x7ddf74479jn5](https://github.com/x7ddf74479jn5)! - chore: include source files
+
 ## 0.0.5
 
 ### Patch Changes
