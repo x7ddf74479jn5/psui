@@ -38,4 +38,16 @@ module.exports = {
 };
 ```
 
-3. CSS変数をグローバルcssファイルに追加します。[Concepts/Colors](https://x7ddf74479jn5.github.io/psui/?path=/docs/concepts-colors--docs)を参考にしてください。
+3. グローバルcssファイルを編集します。
+
+プリセットテーマ *(default, bubblegum, gunmetal)* を使う場合は下記のようにインポートします。
+
+```css
+@import url("@x7ddf74479jn5/psui/dist/themes/default.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+自分でテーマを作成する場合は[Concepts/Colors](https://x7ddf74479jn5.github.io/psui/?path=/docs/concepts-colors--docs)を参考にしてください。

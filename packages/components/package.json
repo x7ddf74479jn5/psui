@@ -23,19 +23,29 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "license": "MIT",
   "sideEffects": [
-    "**/*.css"
+    "*.css"
   ],
   "files": [
-    "dist/**"
+    "dist",
+    "src",
+    "!src/**/*.stories.tsx"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsc -p tsconfig.build.json && vite build && pnpm cpx",
+    "dev": "vite --watch",
+    "cpx": "npx cpx -C 'src/themes/*.css' 'dist/themes'",
     "lint": "eslint \"src/*.{ts,tsx}\" --cache",
     "lint:fix": "eslint --fix \"src/*.{ts,tsx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
@@ -55,6 +65,7 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react": "4.0.3",
     "@x7ddf74479jn5/tw-plugin-psui": "workspace:*",
     "autoprefixer": "10.4.14",
     "eslint": "^8.44.0",
@@ -67,7 +78,6 @@
     "tailwind-config": "workspace:*",
     "tailwindcss": "3.3.2",
     "tsconfig": "workspace:*",
-    "tsup": "7.1.0",
     "typescript": "^5.1.6",
     "vite": "4.3.9"
   },
