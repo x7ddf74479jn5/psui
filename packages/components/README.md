@@ -1,5 +1,5 @@
 <h1 align="center">
-<img width="640" height="420" src="./docs/psui_logo.webp" alt="PSUI Logo" title="PSUI" style="object-fit: contain;" >
+  <img width="640" height="420" src="../../docs/psui_logo.webp" alt="PSUI Logo" title="PSUI" style="object-fit: contain;" >
 </h1>
 
 完全なドキュメントは、[Docs ⋅ PSUI](https://x7ddf74479jn5.github.io/psui/?path=/docs/getting-started-introduction--docs)でご覧ください。
