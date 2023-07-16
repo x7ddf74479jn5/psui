@@ -1,7 +1,11 @@
 <h1 align="center">
-<img width="640" height="420" src="./docs/psui_logo.webp" alt="PSUI Logo" title="PSUI" style="object-fit: contain;" >
+  <img width="640" height="420" src="./docs/psui_logo.webp" alt="PSUI Logo" title="PSUI" style="object-fit: contain;" >
 </h1>
 <p align="center" >Tailwind CSS & Radix UI</p>
+
+[![npm](https://img.shields.io/npm/v/@x7ddf74479jn5/psui)](https://www.npmjs.com/package/@x7ddf74479jn5/psui)
+[![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@x7ddf74479jn5/psui)](https://bundlephobia.com/package/@x7ddf74479jn5/psui)
+[![Storybook](https://github.com/x7ddf74479jn5/psui/actions/workflows/storybook.yaml/badge.svg)](https://github.com/x7ddf74479jn5/psui/actions/workflows/storybook.yaml)
 
 ## Features
 
