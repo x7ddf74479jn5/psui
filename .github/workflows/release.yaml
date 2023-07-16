@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "apps/**"
-      - "packages/**"
+      - ".changeset"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
